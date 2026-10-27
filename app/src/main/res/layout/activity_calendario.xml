@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo" android:orientation="vertical">
+    <include layout="@layout/view_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Titulo" android:text="Calendario" />
+            <Space android:layout_width="1dp" android:layout_height="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Organiza los encuentros por jornada." />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@drawable/bg_card">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Configuración del campeonato" />
+                <Space android:layout_width="1dp" android:layout_height="9dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Formato: Todos contra todos" />
+                <Space android:layout_width="1dp" android:layout_height="5dp" />
+                <TextView android:id="@+id/textoVueltas" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="1 vuelta · 3 jornadas" />
+                <Space android:layout_width="1dp" android:layout_height="12dp" />
+                <Button android:id="@+id/btnConfigCalendario" style="@style/BotonSecundario" android:layout_width="match_parent" android:text="Cambiar configuración" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Jornadas" />
+            <Space android:layout_width="1dp" android:layout_height="12dp" />
+            <LinearLayout android:id="@+id/listaCalendario" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

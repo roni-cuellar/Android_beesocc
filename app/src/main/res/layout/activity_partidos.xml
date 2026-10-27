@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo" android:orientation="vertical">
+    <include layout="@layout/view_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Titulo" android:text="Partidos" />
+            <Space android:layout_width="1dp" android:layout_height="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Encuentros y resultados de tu liga." />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+            <LinearLayout android:id="@+id/listaPartidos" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            <Space android:layout_width="1dp" android:layout_height="15dp" />
+            <Button android:id="@+id/btnVerCalendario" style="@style/BotonSecundario" android:layout_width="match_parent" android:text="Ver calendario" />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

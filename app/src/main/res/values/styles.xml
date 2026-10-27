@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <style name="Theme.BEESOCC" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorAccent">@color/verde</item>
+        <item name="android:statusBarColor">@color/verde_oscuro</item>
+        <item name="android:navigationBarColor">@color/verde_oscuro</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/fondo</item>
+    </style>
+    <style name="Titulo">
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Subtitulo">
+        <item name="android:textColor">@color/gris</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+    <style name="Seccion">
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Campo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textColorHint">@color/gris</item>
+        <item name="android:background">@drawable/bg_input</item>
+    </style>
+    <style name="BotonPrimario">
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">@drawable/bg_primary</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item>
+    </style>
+    <style name="BotonSecundario">
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">@drawable/bg_secondary</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@color/verde_oscuro</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+</resources>

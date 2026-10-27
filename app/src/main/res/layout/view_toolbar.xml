@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="64dp" android:background="@color/verde_oscuro" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="18dp" android:paddingEnd="14dp">
+    <ImageView android:layout_width="165dp" android:layout_height="48dp" android:src="@drawable/logo_horiz" android:scaleType="fitCenter" android:contentDescription="Logo BEESOCC" />
+    <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+    <TextView android:id="@+id/btnVolverLigas" android:layout_width="wrap_content" android:layout_height="44dp" android:gravity="center" android:padding="9dp" android:text="Mis ligas" android:textColor="@color/blanco" android:textSize="13sp" />
+</LinearLayout>

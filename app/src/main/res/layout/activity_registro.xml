@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/verde_suave">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="22dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="25dp" android:background="@drawable/bg_card">
+            <ImageView android:layout_width="match_parent" android:layout_height="83dp" android:src="@drawable/logo_abeja" android:scaleType="fitCenter" android:contentDescription="Ilustración de BEESOCC" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="BEESOCC" android:gravity="center" android:textColor="@color/verde_oscuro" android:textStyle="bold" android:textSize="20sp" />
+            <Space android:layout_width="1dp" android:layout_height="26dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Titulo" android:text="Crear cuenta" android:gravity="center" />
+            <Space android:layout_width="1dp" android:layout_height="5dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Dale forma a tu próxima liga." android:gravity="center" />
+            <Space android:layout_width="1dp" android:layout_height="28dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/texto" android:text="Nombre" android:textStyle="bold" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText android:id="@+id/campoNombre" style="@style/Campo" android:hint="Tu nombre" android:inputType="text" android:singleLine="true" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/texto" android:text="Correo electrónico" android:textStyle="bold" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText android:id="@+id/campoCorreo" style="@style/Campo" android:hint="nombre@correo.com" android:inputType="textEmailAddress" android:singleLine="true" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/texto" android:text="Contraseña" android:textStyle="bold" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText android:id="@+id/campoClave" style="@style/Campo" android:hint="Escribe tu contraseña" android:inputType="textPassword" android:singleLine="true" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/texto" android:text="Confirmar contraseña" android:textStyle="bold" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText android:id="@+id/campoConfirmar" style="@style/Campo" android:hint="Repite tu contraseña" android:inputType="textPassword" android:singleLine="true" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <Button android:id="@+id/btnCrearCuenta" style="@style/BotonPrimario" android:layout_width="match_parent" android:text="Crear cuenta" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <TextView android:id="@+id/btnLogin" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="¿Ya tienes cuenta? Inicia sesión" android:textSize="14sp" android:textColor="@color/verde_oscuro" android:padding="12dp" />
+            <Space android:layout_width="1dp" android:layout_height="10dp" />
+            <TextView android:id="@+id/btnIrInicio" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Volver al inicio" android:textColor="@color/gris" android:textSize="13sp" android:padding="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

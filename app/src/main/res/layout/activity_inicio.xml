@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollInicio" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_hero" android:orientation="vertical" android:padding="24dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="84dp" android:src="@drawable/logo_horiz" android:scaleType="fitCenter" android:contentDescription="Ilustración de BEESOCC" />
+            <Space android:layout_width="1dp" android:layout_height="20dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Menos gestión.&#10;Más fútbol." android:textColor="@color/blanco" android:textSize="34sp" android:textStyle="bold" />
+            <Space android:layout_width="1dp" android:layout_height="12dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Organiza equipos, partidos y resultados en un solo lugar." android:textColor="#D9EDE3" android:textSize="15sp" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <ImageView android:layout_width="match_parent" android:layout_height="234dp" android:src="@drawable/ilustracion_inicio" android:scaleType="fitCenter" android:contentDescription="Ilustración de BEESOCC" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <Button android:id="@+id/btnComenzar" style="@style/BotonSecundario" android:layout_width="match_parent" android:text="Comenzar ahora" />
+            <Space android:layout_width="1dp" android:layout_height="10dp" />
+            <Button android:id="@+id/btnExplorar" style="@style/BotonSecundario" android:layout_width="match_parent" android:text="Conocer más" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="28dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Todo tu campeonato, en un solo lugar." />
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@drawable/bg_card">
+            <ImageView android:layout_width="match_parent" android:layout_height="130dp" android:src="@drawable/ilustracion_trofeo" android:scaleType="fitCenter" android:contentDescription="Ilustración de BEESOCC" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Gestión de campeonatos" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Organiza tus ligas y temporadas." />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@drawable/bg_card">
+            <ImageView android:layout_width="match_parent" android:layout_height="130dp" android:src="@drawable/ilustracion_equipos" android:scaleType="fitCenter" android:contentDescription="Ilustración de BEESOCC" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Equipos y jugadores" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Plantillas, dorsales y posiciones." />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@drawable/bg_card">
+            <ImageView android:layout_width="match_parent" android:layout_height="130dp" android:src="@drawable/ilustracion_calendario" android:scaleType="fitCenter" android:contentDescription="Ilustración de BEESOCC" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Partidos y calendario" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Todos los encuentros de tu liga." />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@drawable/bg_card">
+            <ImageView android:layout_width="match_parent" android:layout_height="130dp" android:src="@drawable/ilustracion_estadisticas" android:scaleType="fitCenter" android:contentDescription="Ilustración de BEESOCC" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Estadísticas en tiempo real" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Resultados, tabla y goleadores." />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="20dp" />
+        <Button android:id="@+id/btnRegistroInicio" style="@style/BotonPrimario" android:layout_width="match_parent" android:text="Registrarse" />
+        <Space android:layout_width="1dp" android:layout_height="28dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo" android:orientation="vertical">
+    <include layout="@layout/view_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Titulo" android:text="Estadísticas" />
+            <Space android:layout_width="1dp" android:layout_height="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Consulta el rendimiento del torneo." />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Rendimiento del campeonato" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btnGoles" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Goles" />
+                <Button android:id="@+id/btnAsistencias" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Asistencias" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btnAmarillas" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Amarillas" />
+                <Button android:id="@+id/btnRojas" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Rojas" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btnFaltas" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Faltas" />
+                <Button android:id="@+id/btnEquiposStats" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Equipos" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="20dp" />
+            <TextView android:id="@+id/tituloEstadistica" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Goleadores" />
+            <Space android:layout_width="1dp" android:layout_height="12dp" />
+            <LinearLayout android:id="@+id/listaEstadisticas" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

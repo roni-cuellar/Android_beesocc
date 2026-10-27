@@ -1,0 +1,11 @@
+BEESOCC MOBILE — ANDROID STUDIO
+
+1. Descomprimir el ZIP.
+2. Android Studio -> Open -> carpeta BEESOCC_Mobile_AndroidStudio.
+3. Sincronizar Gradle (versión 8.9), con JDK 17 y Android SDK 35.
+4. Elegir un emulador Pixel y pulsar Run.
+5. Navegar: Inicio -> Login -> Mis Ligas -> Administrar -> módulos.
+
+Nota: 13 pantallas Kotlin + XML, con datos de ejemplo en memoria.
+No hay conexión a Laravel/MySQL ni cuentas reales.
+Si se solicita wrapper jar, seguir la alternativa explicada en README.md.

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo" android:orientation="vertical">
+    <include layout="@layout/view_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Titulo" android:text="Equipos" />
+            <Space android:layout_width="1dp" android:layout_height="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Gestiona los equipos de tu liga." />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Inscritos en esta liga" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <LinearLayout android:id="@+id/listaEquipos" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <Button android:id="@+id/btnAnadirEquipo" style="@style/BotonPrimario" android:layout_width="match_parent" android:text="Agregar equipo" />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

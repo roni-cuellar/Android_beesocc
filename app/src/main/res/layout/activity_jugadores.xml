@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo" android:orientation="vertical">
+    <include layout="@layout/view_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Titulo" android:text="Jugadores" />
+            <Space android:layout_width="1dp" android:layout_height="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Consulta dorsales y posiciones." />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Plantilla del campeonato" />
+            <Space android:layout_width="1dp" android:layout_height="12dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/texto" android:text="Selecciona un equipo" android:textStyle="bold" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <Spinner android:id="@+id/selectorEquipo" android:layout_width="match_parent" android:layout_height="52dp" android:background="@drawable/bg_input" android:padding="12dp" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <LinearLayout android:id="@+id/listaJugadores" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo" android:orientation="vertical">
+    <include layout="@layout/view_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Titulo" android:text="Resumen" />
+            <Space android:layout_width="1dp" android:layout_height="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Todo el campeonato en un solo lugar." />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="11sp" android:textColor="@color/verde_oscuro" android:text="TEMPORADA" android:textStyle="bold" />
+            <Space android:layout_width="1dp" android:layout_height="4dp" />
+            <TextView android:id="@+id/nombreDashboard" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="22sp" android:textColor="@color/texto" android:text="Liga BetPlay" android:textStyle="bold" />
+            <Space android:layout_width="1dp" android:layout_height="22dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="16dp">
+                <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="116dp" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="12dp" android:gravity="center_vertical">
+                    <TextView android:id="@+id/numeroEquipos" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="29sp" android:textColor="@color/verde_oscuro" android:text="0" android:textStyle="bold" />
+                    <Space android:layout_width="1dp" android:layout_height="6dp" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/gris" android:text="Equipos" />
+                </LinearLayout>
+                <Space android:layout_width="1dp" android:layout_height="5dp" />
+                <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="116dp" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="12dp" android:gravity="center_vertical">
+                    <TextView android:id="@+id/numeroJugadores" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="29sp" android:textColor="@color/verde_oscuro" android:text="0" android:textStyle="bold" />
+                    <Space android:layout_width="1dp" android:layout_height="6dp" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/gris" android:text="Jugadores" />
+                </LinearLayout>
+                <Space android:layout_width="1dp" android:layout_height="5dp" />
+                <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="116dp" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="12dp" android:gravity="center_vertical">
+                    <TextView android:id="@+id/numeroPartidos" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="29sp" android:textColor="@color/verde_oscuro" android:text="0" android:textStyle="bold" />
+                    <Space android:layout_width="1dp" android:layout_height="6dp" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/gris" android:text="Partidos" />
+                </LinearLayout>
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Gestiona tu campeonato" />
+            <Space android:layout_width="1dp" android:layout_height="12dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btnEquipos" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Equipos" />
+                <Button android:id="@+id/btnJugadores" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Jugadores" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="9dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btnPartidos" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Partidos" />
+                <Button android:id="@+id/btnCalendario" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Calendario" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="9dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btnTabla" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Tabla" />
+                <Button android:id="@+id/btnEstadisticas" style="@style/BotonSecundario" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="Estadísticas" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="12dp" />
+            <Button android:id="@+id/btnConfigurar" style="@style/BotonSecundario" android:layout_width="match_parent" android:text="Configuración del campeonato" />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Próximos encuentros" />
+            <Space android:layout_width="1dp" android:layout_height="10dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@drawable/bg_card">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/verde_oscuro" android:text="Jornada 1" android:textStyle="bold" />
+                <Space android:layout_width="1dp" android:layout_height="9dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15sp" android:textColor="@color/texto" android:text="Águilas FC     VS     Leones FC" android:textStyle="bold" />
+                <Space android:layout_width="1dp" android:layout_height="7dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Sábado · 3:00 p. m." />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Seccion" android:text="Últimos resultados" />
+            <Space android:layout_width="1dp" android:layout_height="10dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@drawable/bg_card">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/texto" android:text="Tigres FC       2  -  1       Halcones FC" android:textStyle="bold" />
+                <Space android:layout_width="1dp" android:layout_height="5dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Finalizado · Jornada 1" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

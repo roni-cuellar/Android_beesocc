@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo" android:orientation="vertical">
+    <include layout="@layout/view_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Titulo" android:text="Configuración" />
+            <Space android:layout_width="1dp" android:layout_height="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="Ajusta las reglas del campeonato." />
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp" android:background="@drawable/bg_card">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/texto" android:text="Número de vueltas" android:textStyle="bold" />
+                <Space android:layout_width="1dp" android:layout_height="7dp" />
+                <Spinner android:id="@+id/selectorVueltas" android:layout_width="match_parent" android:layout_height="52dp" android:background="@drawable/bg_input" android:padding="10dp" />
+                <Space android:layout_width="1dp" android:layout_height="18dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/texto" android:text="Desempates" android:textStyle="bold" />
+                <Space android:layout_width="1dp" android:layout_height="10dp" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@drawable/bg_card">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="1. Puntos" />
+                    <Space android:layout_width="1dp" android:layout_height="4dp" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="2. Diferencia de goles" />
+                    <Space android:layout_width="1dp" android:layout_height="4dp" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Subtitulo" android:text="3. Goles a favor" />
+                </LinearLayout>
+                <Space android:layout_width="1dp" android:layout_height="23dp" />
+                <Button android:id="@+id/btnGuardarConfig" style="@style/BotonPrimario" android:layout_width="match_parent" android:text="Guardar configuración" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="24dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
